@@ -20,6 +20,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 677px;
 }
 .banner-detail
 {
