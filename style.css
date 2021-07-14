@@ -1,0 +1,234 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+}
+
+
+/* Top Banner */
+header
+{
+    background-color: #2D25A0;
+}
+.top-banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-detail
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+}
+
+.banner-paragraph
+{
+    width: 485px;
+    height: 130px;
+}
+.top-banner .banner-paragraph p
+{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+
+.link-button
+{
+    text-decoration: none;
+    background-color: #E02C6D;
+    font-weight: 700;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    width: 168px;
+    height: 44px;
+}
+
+.banner-photo
+{
+    width: 556px;
+    height: 438px;
+}
+
+.banner
+{
+    width: 556px;
+    height: 438px;
+}
+
+/* Players Detail Sectio  */
+
+.footballers
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.players-detail
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+
+.player-frame
+{
+    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+    width: 330px;
+    height: 480px;
+    border-radius: 3px;
+}
+
+.player-photo
+{
+    padding: 15px 15px 0px 15px;
+    
+}
+
+.player-frame .player-photo img
+{
+    width: 300px;
+    height: 256px;
+}
+.player-info
+{
+    width: 300px;
+    height: 154px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.player-frame .player-info h1
+{
+    margin-top: 16px;
+    margin-bottom: 0px;
+    font-size: 28px;
+}
+
+.player-frame .player-info p
+{
+    text-align: justify;
+    margin-top: 10px ;
+    font-size: 16px;
+}
+/* bonus section  */
+.bonus-area
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 200px;
+}
+
+.bonus-detail
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 69px;
+}
+.bonus-written
+{
+    padding-left: 180px;
+    padding-right: 40px;
+}
+.bonus-detail .bonus-written h1{
+    font-weight: 700px;
+    font-size: 48px;
+    color: #0A0826;
+}
+
+.bonus-detail .bonus-written p
+{
+    font-weight: 400px;
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: justify;
+}
+
+.bonus-photo 
+{
+    margin-right: 450px;
+}
+
+.bonus-photo img
+{
+    width: 567px;
+    height: 427px;
+}
+
+/* Footani Style */
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 158px;
+    margin-bottom: 63px;
+}
+.footer-details
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+.footer-logo
+{
+    width: 483px;
+    height: 110px;
+}
+
+.footer-icon
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 170px;
+    height: 32px;
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-top: 20px;
+}
+
+.footer-icon img
+{
+    width: 32px;
+    height: 32px;
+    padding-left: 14px;
+}
+
+.footer-paragraph
+{
+    padding-left: 135px;
+    padding-right: 124px;
+    padding-top: 16px;
+    width: 236px;
+    height: 31px;
+}
+.footer-paragraph p
+{
+    font-size: 18px;
+    text-align: center;
+}
+/* Media Queris */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+     .container{
+        width: 100%;
+    }
+    .banner-detail, .players-detail, .bonus-detail, .footer-details{
+        grid-template-columns: repeat(1,2px);
+    }
+}
